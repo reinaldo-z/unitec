@@ -1,0 +1,439 @@
+\documentclass[]{article}
+
+\title{\textbf{\large EXAMEN BIMESTRAL}}
+\date{}
+
+% \usepackage{showframe}
+\usepackage[spanish]{babel}
+\decimalpoint
+\usepackage{fullpage}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage[makeroom]{cancel}
+\usepackage{multirow}
+\usepackage{eso-pic}
+\usepackage{amsmath}
+\usepackage{multicol}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.12}
+
+
+\newcommand\BackgroundLogo{
+\put(-150,290){
+\parbox[b][\paperheight]{\paperwidth}{%
+\vfill
+\centering
+\includegraphics[width=3cm]{/Users/reinaldo/Documents/clases/unitec/logo}%
+\vfill
+}}}
+
+
+\begin{document}
+\AddToShipoutPicture*{\BackgroundLogo}
+\ClearShipoutPicture
+\maketitle
+
+
+\vspace{-5mm}{\scriptsize \textbf{S S -+}}
+
+\vspace{15mm}
+\noindent\fbox{
+    \parbox{0.978\textwidth}{
+        \begin{center}
+            {\large  \textbf{EXAMEN BIMESTRAL}}
+        \end{center}
+    }}
+
+\vspace{10mm}
+
+\begin{tabular}{rcccccc}
+\textbf{EXAMEN BIMESTRAL}  &  &  &  &  & \\
+\textbf{DE: } & \multicolumn{3}{c}{ \qquad \qquad C\'alculo Diferencial \qquad \qquad} \\
+\cline{2-4}  \cline{6-6}
+ & \multicolumn{3}{c}{\qquad \qquad Nombre de la materia \qquad \qquad} & \qquad \qquad \quad &\qquad \textbf{Autoriz\'o}\qquad\, \\ \\ \\
+\textbf{Nombre del Alumno:} \\ 
+\cline{2-5} \\
+\textbf{Grupo}: & \qquad \qquad  \qquad & & \textbf{Fecha:} & \\
+\cline{2-3} \cline{5-5} \\ 
+\textbf{Nombre del profesor:} & \multicolumn{4}{c}{M. en C. Reinaldo Arturo Zapata Pe\~na}  \\
+\cline{2-5} 
+\end{tabular}
+
+
+\section*{\small Instrucciones} 
+\vspace{-4mm}
+\begin{enumerate}[nolistsep]
+{\footnotesize
+\item \textbf{Lee con atenci\'on todo el examen antes de resolverlo. Escribe todos los
+datos que se solicitan con tinta negra o azul. Solo hay una respuesta correcta
+por reactivo. No uses corrector, evita tachaduras, sobreponer letras y/o
+n\'umeros; de lo contrario se anular\'a el reactivo.}
+
+\item \textbf{El examen es un documento institucional por lo tanto no debes rayar,
+dibujar o realizar cualquier otro escrito ajeno a los contenidos del examen o
+que por instrucci\'on no se te hayan solicitado; de lo contrario se ANULARA el
+examen.}
+
+\item \textbf{No se permite hablar, voltear o pedir alg\'un material a compañeros y/o
+profesor durante el examen. No sacar celular, aud\'ifonos o cualquier aparato
+ajeno al examen; de no cumplir con lo especificado se ANULAR\'a el examen.}
+
+\item \textbf{Si se sorprende a un alumno (os) copiando bajo cualquier forma o medio se
+ANULA el examen.}
+
+\item \textbf{Los ex\'amenes resueltos con l\'apiz no tienen derecho a revisi\'on o
+aclaraciones.}
+
+\item \textbf{Es importante anotar TODOS LOS PASOS o PROCEDIMIENTOS en todos los
+problemas y que estos sean l\'ogicos y entendibles, no hacerlo anula la
+respuesta, a\'un si esta es correcta, se deber\'a  remarcar el resultado con
+tinta negra o azul.} }
+\end{enumerate}
+\vspace{-3mm}
+\begin{center}
+{\small \textbf{LA ANULACI\'ON DE EXAMEN EQUIVALE A CERO DE CALIFICACI\'ON.}}
+\end{center}
+% section Instrucciones (end)
+
+\section*{Teor\'ia} % (fold)
+\label{sec:teor'ia}
+
+\begin{enumerate}
+\item Explique con sus palabras que es una funci\'on, cual es
+la variable dependiente y cual es la variable independiente.
+\hfill \textbf{8 puntos.}
+
+
+\item Explique qu\'e es una funci\'on par e impar.
+\hfill \textbf{8 puntos.}
+
+% \item Sea la funci\'on sinusoidal dada por
+% \begin{equation*}
+% f(x) = A \sin (\beta x + \varphi),
+% \end{equation*}
+% explique a qu\'e hacen referencia las variables  $A$, $\beta$, $x$ y $\varphi$.
+
+
+\item Haciendo uso de la fugura \ref{fig:graficar}, haga un bosquejo de las
+funciones $f(x)=\cos(x)$ y $g(x)=\sin(x)$ para el intervalo $0 \leq x \leq
+2\pi$. Identifica cada una de ellas etiquet\'andolas.
+\hfill \textbf{9 puntos.}
+
+\item Complete los siguiente teoremas sobre l\'imites:
+\hfill \textbf{9 puntos.}
+
+Sean $f(x)$ y $g(x)$ dos funciones definidas y con l\'imites $L_{1}$ y $L_{2}$
+en el punto $x=a$ de tal manera que 
+\begin{align*}
+\lim_{x \to a} f(x) = L_{1}, && \lim_{x \to a} g(x) = L_{2},
+\end{align*}
+entonces
+\begin{align}
+\lim_{x \to a} [f(x) + g(x)]     &=    \\ \nonumber \\
+\lim_{x \to a} [f(x) \cdot g(x)] &=   \\ \nonumber \\
+\lim_{x \to a} \left[\frac{f(x)}{g(x)}\right] &=  \qquad \qquad \qquad \forall \quad L_{2} \neq 
+\end{align}
+\setcounter{equation}{0}
+
+\item Explique con sus palabras que interpretaci\'on geom\'etrica tiene la
+derivada de una funci\'on.
+\hfill \textbf{8 puntos.}
+
+\item Escriba la ecuaci\'on de la recta y explique cada uno de sus elementos.
+\hfill \textbf{8 puntos.}
+
+\end{enumerate}
+
+\begin{figure}[b]
+    \centering
+  \begin{tikzpicture}
+    \begin{axis}[
+     x=60,
+     y=30,
+     clip=false,
+     xmin=-0.30,xmax=2.2*pi,
+     xlabel= $x$,
+     ylabel=$f(x)$,
+     ymin=-2.2,ymax=2.7,
+     axis lines=middle,
+     xtick={0,1.57,3.14,4.71,6.28},
+     xticklabel style = {fill=white},
+     xticklabels={$0$, $\displaystyle\frac{\pi}{2}$, $\displaystyle\pi\,$,$\,\,\,\displaystyle\frac{3\pi}{2}$,$\,2\pi$},
+     set layers = axis on top
+     ]
+     \draw (axis cs:0,1) -- (axis cs:6.28,1);
+     \draw (axis cs:0,2) -- (axis cs:6.28,2);
+     \draw (axis cs:0,-1) -- (axis cs:6.28,-1);
+     \draw (axis cs:0,-2) -- (axis cs:6.28,-2);
+     \draw (axis cs:1.57,2) -- (axis cs:1.57,-2);
+     \draw (axis cs:3.14,2) -- (axis cs:3.14,-2);
+     \draw (axis cs:4.71,2) -- (axis cs:4.71,-2);
+     \draw (axis cs:6.28,2) -- (axis cs:6.28,-2);
+     \draw (axis cs:0.78,2) -- (axis cs:0.78,-2);
+     \draw (axis cs:2.36,2) -- (axis cs:2.36,-2);
+     \draw (axis cs:3.93,2) -- (axis cs:3.93,-2);
+     \draw (axis cs:5.50,2) -- (axis cs:5.50,-2);
+    \end{axis}
+  \end{tikzpicture}
+    \caption{especio  para graficar funciones.}
+    \label{fig:graficar}
+\end{figure}
+% section teor'ia (end)
+
+\section*{Problemas} % (fold)
+\label{sec:problemas}
+
+\begin{enumerate}
+\item Haciendo uso de la figura \ref{fig:graficar} trace la gr\'afia de la
+funci\'on $f(x) = 2 \sin (3x)$ para el intervalo $0 \leq x \leq 2\pi$.
+\hfill \textbf{8 puntos.}
+
+
+
+\item Utilizando la definici\'on de l\'imite para la derivada de una funci\'on,
+\hfill \textbf{8 puntos.}
+\begin{equation*}
+f'(x) = \lim_{\Delta x \to a} \frac{f(x + \Delta x) - f(x)}{\Delta x},
+\end{equation*}
+calcule la derivada de $f(x)= 3x^{2} - 6x + 2 $.
+
+\item Determine la ecuaci\'on de la recta que pasa por el punto (-1,2) y que
+tiene pendiente $m=3$. El \'angulo que forma esta recta con el eje de las $x$
+?`es mayor o menor qeu $45^{\circ}$? ?`Es mayor o menor qeu $90^{\circ}$?
+
+\hfill \textbf{8 puntos.}
+
+\item Determine la ecuaci\'on de la recta que pasa por los puntos (4,5) y (2,3).
+\hfill \textbf{8 puntos.}
+
+
+\item Dadas las siguientes funcines, 
+\hfill \textbf{9 puntos.}
+\begin{align}
+f(x) &= \frac{x^{2} - 4x  + 4 }{x+5}, \\ \nonumber \\
+g(x) &= \frac{\sin^{2}(x)}{x^{2}-25},
+\end{align}
+\setcounter{equation}{0}
+encuentre los puntos para los cuales estas funciones son indeterminadas.
+\item Determine  
+\begin{equation*}
+\lim_{x \to 0} \frac{\sin(x)}{x},
+\end{equation*} 
+calculando el l\'imite por la izquierda ($0^{-}$) derecha
+($0^{+}$)
+
+\item Calcule la derivada de las siguientes funciones:
+\hfill \textbf{9 puntos.}
+\begin{align}
+f(x) &= 8x^{4} - 6x^{3} + 12x^{2} -3x +6, \\ \nonumber \\
+g(x) &= 3x^{2}\cos(x), \\ \nonumber \\
+h(x) &= \frac{\sin(x)}{2x^2}, \\ \nonumber 
+\end{align}
+\end{enumerate}
+\setcounter{equation}{0}
+
+% section problemas (end)
+
+\newpage
+
+\begin{center}
+{\sc \huge Respuestas}
+\end{center}
+
+\section*{Teor\'ia} % (fold)
+\label{sec:teoria}
+
+\begin{enumerate}
+
+\item Es una relaci\'on entre un conjunto dado $x$, llamado dominio, y otro
+conjunto de elementos $y$, llamado codominio, de forma que a cada elemento del
+dominio le corresponde un \'unico elemento del codominio. La variable
+dependiente, generalmente $x$, es aquella a la que puede adquirir cualquier
+valor que se encuentra en el dominio y la variable dependiente, generalmente
+$y$, es aquella que adquiere valores en el contradominio y depende de que valor
+se le haya asignado a la variable independiente.
+
+\item Funci\'on par: $f(-x) = f(x)$.
+Funci\'on impar: $f(-x) = -f(x)$.
+
+\item Gr\'afica: $f(x)=\sin(x)$; $g(x)=\cos(x)$.
+\begin{figure}[h!]
+    \centering
+  \begin{tikzpicture}
+    \begin{axis}[
+     x=60,
+     y=30,
+     clip=false,
+     xmin=-0.30,xmax=2.2*pi,
+     xlabel= $x$,
+     ylabel=$f(x)$,
+     ymin=-2.2,ymax=2.7,
+     axis lines=middle,
+     xtick={0,1.57,3.14,4.71,6.28},
+     xticklabel style = {fill=white},
+     xticklabels={$0$, $\displaystyle\frac{\pi}{2}$, $\displaystyle\pi\,$,$\,\,\,\displaystyle\frac{3\pi}{2}$,$\,\pi$},
+     set layers = axis on top
+     ]
+     \draw (axis cs:0,1) -- (axis cs:6.28,1);
+     \draw (axis cs:0,2) -- (axis cs:6.28,2);
+     \draw (axis cs:0,-1) -- (axis cs:6.28,-1);
+     \draw (axis cs:0,-2) -- (axis cs:6.28,-2);
+     \draw (axis cs:1.57,2) -- (axis cs:1.57,-2);
+     \draw (axis cs:3.14,2) -- (axis cs:3.14,-2);
+     \draw (axis cs:4.71,2) -- (axis cs:4.71,-2);
+     \draw (axis cs:6.28,2) -- (axis cs:6.28,-2);
+     \draw (axis cs:0.785,2) -- (axis cs:0.785,-2);
+     \draw (axis cs:2.36,2) -- (axis cs:2.36,-2);
+     \draw (axis cs:3.93,2) -- (axis cs:3.93,-2);
+     \draw (axis cs:5.497,2) -- (axis cs:5.497,-2);
+    \addplot[domain=0:2*pi,samples=200,red]{sin(deg(x))}
+                                node[right,pos=0.9,font=\footnotesize]{$\sin x$};
+    \addplot[domain=0:2*pi,samples=200,blue]{cos(deg(x))}
+                                node[right,pos=1,font=\footnotesize]{$\cos x$};
+    \end{axis}
+  \end{tikzpicture}
+    % \caption{especio  para graficar funciones.}
+    \label{fig:graficar2}
+\end{figure}
+
+\item Teoremas:
+\begin{align}
+\lim_{x \to a} [f(x) + g(x)]     &=  L_{1} + L_{2}  \\ \nonumber \\
+\lim_{x \to a} [f(x) \cdot g(x)] &= L_{1} \cdot L_{2} \\ \nonumber \\
+\lim_{x \to a} \left[\frac{f(x)}{g(x)}\right] &= \frac{L_{1}}{L_{2}} \qquad 
+\forall \quad L_{2} \neq 0
+\end{align}
+\setcounter{equation}{0}
+
+\item La derivada de una funci\'on evaluada en un punto nos proporciona el valor
+de la pendiente de la recta tangente a la funci\'on en dicho punto.
+
+
+\item Ecuaci\'on: $y = mx + b$
+
+$y$: variable dependiente,
+
+$x$: variable independiente,
+
+$m$: pendiente,
+
+$b$: ordenada al origen o instersecci\'on de la recta con el eje $y$.
+\end{enumerate}
+\newpage
+
+\section*{Problemas} % (fold)
+\label{sec:problemas2}
+
+\begin{enumerate}
+    
+\item Gr\'afica: $2\sin(3x)$.
+\begin{figure}[h!]
+    \centering
+  \begin{tikzpicture}
+    \begin{axis}[
+     x=60,
+     y=30,
+     clip=false,
+     xmin=-0.30,xmax=2.2*pi,
+     xlabel= $x$,
+     ylabel=$f(x)$,
+     ymin=-2.2,ymax=2.7,
+     axis lines=middle,
+     xtick={0,1.57,3.14,4.71,6.28},
+     xticklabel style = {fill=white},
+     xticklabels={$0$, $\displaystyle\frac{\pi}{2}$, 
+     $\displaystyle\pi\,$,$\,\,\,\displaystyle\frac{3\pi}{2}$,$\,\pi$},
+     set layers = axis on top
+     ]
+     \draw (axis cs:0,1) -- (axis cs:6.28,1);
+     \draw (axis cs:0,2) -- (axis cs:6.28,2);
+     \draw (axis cs:0,-1) -- (axis cs:6.28,-1);
+     \draw (axis cs:0,-2) -- (axis cs:6.28,-2);
+     \draw (axis cs:1.57,2) -- (axis cs:1.57,-2);
+     \draw (axis cs:3.14,2) -- (axis cs:3.14,-2);
+     \draw (axis cs:4.71,2) -- (axis cs:4.71,-2);
+     \draw (axis cs:6.28,2) -- (axis cs:6.28,-2);
+     \draw (axis cs:0.785,2) -- (axis cs:0.785,-2);
+     \draw (axis cs:2.36,2) -- (axis cs:2.36,-2);
+     \draw (axis cs:3.93,2) -- (axis cs:3.93,-2);
+     \draw (axis cs:5.497,2) -- (axis cs:5.497,-2);
+    \addplot[domain=0:2*pi,samples=200,red]{2*sin(deg(3*x))}
+                                node[left,pos=.9,font=\footnotesize]{$2\sin(3x)$};
+    \end{axis}
+  \end{tikzpicture}
+    \label{fig:graficar3}
+\end{figure}
+
+\item $f(x)= 3x^{2} - 6x + 2 $
+\begin{align*}
+f'(x) 
+&= \lim_{\Delta x \to a} 
+\frac{3(x + \Delta x)^{2} - 6(x + \Delta x) + 2 - 3x^{2} + 6x - 2}
+{\Delta x} \\ \\
+&=  \lim_{\Delta x \to a} 
+\frac{3(x^{2} + 2x\Delta x + \Delta x^{2}) - 6(x + \Delta x) + 2 - 3x^{2} + 6x - 2}
+{\Delta x} \\ \\
+&=  \lim_{\Delta x \to a} 
+\frac{6x\Delta x + 3 \Delta x^{2} -6\Delta x}{\Delta x} \\ \\
+&=  \lim_{\Delta x \to a} 
+6x + 3\Delta x -6 \\ \\
+&= 6x - 6.
+\end{align*}
+
+\item Ecuaci\'on de la recta:
+\begin{align*}
+y - y_{1} &= m (x - x_{1}) \\
+y - 2 &= 3(x - (-1)) \\
+y &= 3x +3 +2 \\
+y &= 3x +5
+\end{align*}
+El \'angulo que forma respecto al eje $x$ es mayor a $45^{\circ}$ y menor que
+$90^{\circ}$.
+
+\item Ecuaci\'on d la recta:
+\begin{equation*}
+m = \frac{y_{2} - y_{1}}{x_{2}-x_{1}} = \frac{ 3 - 5}{2 - 4} = \frac{-2}{-2} = 1 \\ \\
+\end{equation*}
+\begin{align*}
+y - y_{1} &= m (x - x_{1}) \\
+y - 5 &= (1) (x - 4) \\
+y &= x - 4 +5 \\
+y &= x+1
+\end{align*}
+
+\item Indeterminaciones:
+\begin{align}
+x+5 &= 0 \nonumber \\  
+x&=-5 \\ \nonumber \\
+x^{2}-25 &= 0 \nonumber \\
+x &= \sqrt{25} \nonumber\\
+x &= \pm 5
+\end{align}
+\setcounter{equation}{0}
+
+\item L\'imite:
+\begin{equation*}
+\lim_{x \to 0} \frac{\sin(x)}{x} = 1,
+\end{equation*} 
+
+\item Derivadas:
+\begin{align}
+% f(x) &= 8x^{4} - 6x^{3} + 12x^{2} -3x +6, \\ \nonumber \\
+f'(x) &= 32x^{3} - 18x^{2} + 24x -3, \\ \nonumber \\
+% g(x) &= 3x^{2}\cos(x), \\ \nonumber \\
+g'(x) &= -3x^{2}\sin(x) + 6x\cos(x) , \\ \nonumber \\
+% h(x) &= \frac{\sin(x)}{2x^2}, \\ \nonumber \\
+h'(x) &= \frac{\cos(x)}{2x^2} - \frac{\sin(x)}{x^{3}}, \\ \nonumber
+\end{align}
+\setcounter{equation}{0}
+
+
+\end{enumerate}
+
+
+
+\end{document}
+

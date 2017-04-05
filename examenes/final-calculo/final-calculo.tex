@@ -1,0 +1,118 @@
+\documentclass{article}
+
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{pdfpages}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.12}
+
+
+\title{Examen final de Cálculo Diferencial}
+\author{M. en C. Reinaldo Arturo Zapata Peña}
+
+\begin{document}
+\includepdf[pages=-]{car-final-calc}
+
+\section{Teoría} % (fold)
+\label{sec:teoria}
+
+
+\begin{figure}[b]
+    \centering
+  \begin{tikzpicture}
+    \begin{axis}[
+     x=60, y=30, clip=false, xmin=-0.30,xmax=2.2*pi, xlabel= $x$, ylabel=$f(x)$,
+     ymin=-2.2,ymax=2.7, axis lines=middle, xtick={0,1.57,3.14,4.71,6.28},
+     xticklabel style = {fill=white}, xticklabels={$0$,
+     $\displaystyle\frac{\pi}{2}$,
+     $\displaystyle\pi\,$,$\,\,\,\displaystyle\frac{3\pi}{2}$,$\,2\pi$}, set
+     layers = axis on top ]
+     \draw (axis cs:0,1) -- (axis cs:6.28,1);
+     \draw (axis cs:0,2) -- (axis cs:6.28,2);
+     \draw (axis cs:0,-1) -- (axis cs:6.28,-1);
+     \draw (axis cs:0,-2) -- (axis cs:6.28,-2);
+     \draw (axis cs:1.57,2) -- (axis cs:1.57,-2);
+     \draw (axis cs:3.14,2) -- (axis cs:3.14,-2);
+     \draw (axis cs:4.71,2) -- (axis cs:4.71,-2);
+     \draw (axis cs:6.28,2) -- (axis cs:6.28,-2);
+     \draw (axis cs:0.78,2) -- (axis cs:0.78,-2);
+     \draw (axis cs:2.36,2) -- (axis cs:2.36,-2);
+     \draw (axis cs:3.93,2) -- (axis cs:3.93,-2);
+     \draw (axis cs:5.50,2) -- (axis cs:5.50,-2);
+    \end{axis}
+  \end{tikzpicture}
+    \caption{especio  para graficar funciones.}
+    \label{fig:graficar}
+\end{figure}
+\begin{enumerate}
+\item Explique qué es una función par e impar.
+\hfill \textbf{6 puntos.}
+
+\item Haciendo uso de la figura \ref{fig:graficar}, haga un bosquejo de las
+funciones $f(x)=\cos(2x)$ y $g(x)=2\sin(x)$ para el intervalo $0 \leq x \leq
+2\pi$. Identifica cada una de ellas etiquet\'andolas.
+\hfill \textbf{6 puntos.}
+
+\item Explique con sus palabras que interpretación geométrica tiene la
+derivada de una función.
+\hfill \textbf{6 puntos.}
+
+\item Si para una recta tangencial a una función $f(x)$ se conoce el punto
+($a$,$f(a)$) y la pendiente de la recta tangente $m_{\text{tan}}$, escriba el
+procedimiento para encontrar la recta perpendicular a la función en dicho punto.
+\hfill \textbf{6 puntos.}
+
+\item Explique con sus palabras que establece el teorema de l'H\^opital y las
+situaciones en las que se puede utilizar.
+\hfill \textbf{6 puntos.}
+
+\end{enumerate}
+
+% section teoría (end)
+
+
+
+\section{Problemas} % (fold)
+\label{sec:problemas}
+
+\begin{enumerate}
+
+\item Sea la función $f(x)= 2x^{2} -3x + 8$ encuentre las rectas tangente y
+perpendicular a dicha función en el punto $x=4$. Indique además si el ángulo que
+forma dicha recta respecto al eje positivo de las $x$ es mayor o menor a
+$90^{\circ}$ y mayor o menor que $180^{\circ}$.
+
+\item Dadas las siguientes funcines, 
+
+\hfill \textbf{9 puntos.}
+\begin{align}
+f(x) &= \frac{x^{2} - 4x  + 4 }{x+5}, \label{eq:lim1}
+\\
+g(x) &= \frac{\sin^{2}(x)}{x^{2}-25}, \label{eq:lim2}
+\end{align}
+encuentre los puntos para los cuales estas funciones son indeterminadas.
+
+\item Utilizando las funciones del inciso anterior, determine el límite para la
+Ec. \eqref{eq:lim1} cuando $x=3$ y el límite para la Ec. \eqref{eq:lim2} cuando
+$x\rightarrow2$.
+
+\item Utilizando nuevamente las Ecs. \eqref{eq:lim1} y \eqref{eq:lim2} y la
+regla de l'H\^opital, determine el límite de cada una de las funciones cuando
+$x\rightarrow-5$.
+
+
+\end{enumerate}
+
+
+
+
+
+
+% section problemas (end)
+
+\end{document}
