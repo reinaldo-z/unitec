@@ -94,7 +94,7 @@ revoluciones. Su velocidad angular al final de este intervalo de tiempo es
 
 \item Se construye un proyectil que se puede dividir a la mitad durante el
 vuelo mediante un control remoto. Dicho proyectil es lanzado de forma vertical
-a con una velocidad inicial $v_{yi}=19$m/s. Después de un tiempo $t=3$\,s el
+a con una velocidad inicial $v_{iy}=19$m/s. Después de un tiempo $t=3$\,s el
 control es accionado y cada mitad del proyectil adquiere una velocidad $v_{x} =
 \pm5$\,m/s. Determine \emph{a}) Si el proyectil está subiendo, bajando o está
 en el punto mas alto de la trayectoria, \emph{b}) El tiempo de vuelo restante
@@ -111,7 +111,7 @@ extremos a una bisagra sin fricción siendo libre de rotar en el plano vertical.
 La barra es liberada desde el reposo cuando forma una ángulo $\theta =
 -10^{\circ}$  respecto al eje positivo $x$. ¿Cuál es la aceleración angular
 inicial de la barra y la aceleración en el extremo opuesto a la bisagra?
-Utilice $I= \frac{1}{3}mL^{2}$
+Utilice $I= \frac{1}{3}mL^{2}$ y $a_{\tan} = L \alpha$.
 
 \item Una de las vigas de soporto de un edificio, hecha de acero, soporta una
 masa de $m=2,000$\,Kg. Si se tiene que su área de sección transversal es
@@ -198,7 +198,7 @@ S &=  \frac{F/A}{\Delta x / h}.
 % section resteoria (end)
 
 \section{Problemas} % (fold)
-\label{sec:problemas}
+\label{sec:secproblemas}
 
 \begin{enumerate}
 
@@ -216,10 +216,43 @@ x_{f} &= v_{ix}t = 79.50 \text{\,m}
 \alpha &= \frac{\omega_{f}^{2}}{2 \theta_{f}} = 
 \end{align*}
 
+\item Proyectil dividido.
 
+\emph{a}) El proyectil va de bajada para un $t=3$\,s. \\
+\emph{b}) 
+\begin{align*}
+t_{\text{total}} &= \frac{-2v_{iy}}{g} = 
+\frac{(-2)(19\,\text{m/s})}{-9.81\text{m/s}^{2}} = 3.9\text{\,s} \\
+t_{\text{restante}} &= 0.9\text{\,s}
+\end{align*}
+\emph{c})
+\begin{align*}
+x &= v_{x} t_{\text{restante}} = (5\text{\,m/s}) (0.9\text{\,s}) = 
+4.5\text{\,m}
+\end{align*}
 
+\item Hombre en trineo mediante conservación de momento
+\begin{align*}
+m_{h} v_{ih} + m_{t} v_{it} &= (m_{h} + m_{t}) v_{f(h+t)} \\
+v_{f(h+t)} &= \frac{m_{h} v_{ih}}{m_{h} + m_{t}} = 6.84\text{\,m/s}
+\end{align*}
+
+\item Barra libre para girar:
+\begin{align*}
+\tau =& rF \sin \theta = I \alpha \\
+r &= \frac{L}{2} \\
+F &= mg \\ \\
+\alpha &= \frac{Lmg \sin \theta}{2I} = \frac{3g}{2L}\sin \theta \\
+a_{\tan} &= L \alpha = \frac{3}{2}g\sin \theta
+\end{align*}
+
+\item Compresión de la viga:
+\begin{equation*}
+\Delta L  =  \frac{(F/A) L_{i}}{Y} = 0.00002943\text{\,m} 
+\approx 3 \times 10^{-5}\text{\,m}
+\end{equation*}
 
 \end{enumerate}
-% section problemas (end)
+% section secproblemas (end)
 
 \end{document}
